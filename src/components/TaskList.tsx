@@ -56,6 +56,11 @@ export function TaskList() {
     setTasks(
       tasks.filter(item => item.id !== id)
     )
+
+    //remove id in IDS array
+    ids = ids.filter(function(item) {
+      return item !== id;
+    })
   }
 
   return (
